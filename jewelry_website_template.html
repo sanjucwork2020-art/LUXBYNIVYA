@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artisan's Touch - Handcrafted Jewelry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .product-card { transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
+        .btn-primary { background-color: #A0522D; } /* Sienna Brown - elegant */
+        .btn-primary:hover { background-color: #8B4513; } /* Saddle Brown */
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">
+                <a href="#" class="text-stone-700 hover:text-stone-900">The Artisan's Touch</a>
+            </h1>
+            <nav class="space-x-4 hidden sm:block">
+                <a href="#featured" class="text-gray-600 hover:text-stone-700 font-medium">Featured</a>
+                <a href="#shop" class="text-gray-600 hover:text-stone-700 font-medium">Shop</a>
+                <a href="#about" class="text-gray-600 hover:text-stone-700 font-medium">Our Story</a>
+                <a href="#contact" class="text-gray-600 hover:text-stone-700 font-medium">Contact</a>
+            </nav>
+            <div class="text-lg font-semibold text-stone-700">
+                <a href="#" class="hover:text-stone-900">&#x1F6CD;</a> <!-- Shopping Cart Icon -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-white" 
+        style="background-image: url('https://placehold.co/1200x600/6b7280/ffffff?text=Your+High-Quality+Jewelry+Banner');">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative text-center p-6">
+            <h2 class="text-5xl md:text-7xl font-bold mb-4 tracking-wider text-shadow-lg">Elegance Crafted by Hand</h2>
+            <p class="text-xl mb-8 font-light italic">Unique pieces for every story.</p>
+            <a href="#shop" class="bg-white text-stone-700 hover:bg-stone-100 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Explore the Collection
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-stone-700">Featured Creations</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1: Necklace -->
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/D4B79A/333333?text=Handcrafted+Necklace" alt="Handcrafted Gold Necklace" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold mb-2">The Celeste Necklace</h3>
+                        <p class="text-gray-500 mb-4">Sterling Silver with Blue Topaz</p>
+                        <p class="text-2xl font-bold text-stone-700 mb-4">OMR 45.00</p>
+                        <button class="w-full btn-primary text-white font-medium py-2 rounded-lg transition duration-300">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2: Ring -->
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/9DA7AE/333333?text=Engagement+Ring+Set" alt="Diamond Engagement Ring" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold mb-2">Eternity Band Ring</h3>
+                        <p class="text-gray-500 mb-4">18K Gold, Pave Diamonds</p>
+                        <p class="text-2xl font-bold text-stone-700 mb-4">OMR 120.00</p>
+                        <button class="w-full btn-primary text-white font-medium py-2 rounded-lg transition duration-300">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3: Earrings -->
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/E5E5E5/333333?text=Pearl+Drop+Earrings" alt="Pearl Drop Earrings" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold mb-2">Ocean Pearl Drops</h3>
+                        <p class="text-gray-500 mb-4">Freshwater Pearls and Rose Gold</p>
+                        <p class="text-2xl font-bold text-stone-700 mb-4">OMR 30.00</p>
+                        <button class="w-full btn-primary text-white font-medium py-2 rounded-lg transition duration-300">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-stone-700">Our Story of Craftsmanship</h2>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                Every piece of jewelry we create at The Artisan's Touch is born from a passion for quality materials and timeless design. We believe that jewelry should be personal, meaningful, and meticulously crafted. Our focus is on sourcing ethical materials and providing unique designs that you won't find anywhere else.
+            </p>
+            <a href="#contact" class="text-stone-700 font-semibold hover:text-stone-900 border-b-2 border-stone-700">Meet the Maker →</a>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            <!-- Logo/Motto -->
+            <div class="col-span-1">
+                <h3 class="text-xl font-bold mb-3 text-white">The Artisan's Touch</h3>
+                <p class="text-sm text-gray-400">Handmade with care, worn with pride.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-span-1">
+                <h4 class="text-lg font-semibold mb-3">Shop</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">Rings</a></li>
+                    <li><a href="#" class="hover:text-white">Necklaces</a></li>
+                    <li><a href="#" class="hover:text-white">New Arrivals</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-span-1">
+                <h4 class="text-lg font-semibold mb-3">Connect</h4>
+                <p class="text-sm text-gray-400 mb-2">Email: info@artisanstouch.com</p>
+                <p class="text-sm text-gray-400">Phone: +968 XXXX XXXX</p>
+            </div>
+
+             <!-- Social Media (Placeholder) -->
+            <div class="col-span-1">
+                <h4 class="text-lg font-semibold mb-3">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">FB</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">IG</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">WA</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 pt-4 border-t border-gray-700 text-center text-sm text-gray-500">
+            &copy; 2025 The Artisan's Touch. All rights reserved.
+        </div>
+    </footer>
+    
+    <!-- Payment Link Placeholder Script -->
+    <script>
+        // Note: For real e-commerce, you would integrate a payment gateway like PayPal, Stripe, or a local service here.
+        // Since we are starting with a zero budget, you can use direct payment links (like WhatsApp or a PayPal.me link)
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('click', function(event) {
+                // In the live version, this would redirect to a product page or a direct checkout link
+                alert('Success! You would now be taken to a secure payment page or directed to contact us for purchase.');
+            });
+        });
+    </script>
+</body>
+</html>
